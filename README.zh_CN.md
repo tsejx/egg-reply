@@ -60,6 +60,20 @@ exports.reply = {
   尽可能描述详细。
 - How: 描述这个插件是怎样使用的，具体的示例代码，甚至提供一个完整的示例，并给出链接。
 
+```js
+{
+  code: 200,
+  success: true,
+  data: 'Hello world!'
+}
+
+{
+  code: 200,
+  success: true,
+  msg: 'Hello world!'
+}
+```
+
 ## 详细配置
 
 请到 [config/config.default.js](config/config.default.js) 查看详细配置项说明。
@@ -75,17 +89,3 @@ exports.reply = {
 ## License
 
 [MIT](LICENSE)
-
-```js
-{
-  code: 200,
-  success: true,
-  data: 'Hello world!'
-}
-
-{
-  code: 200,
-  success: true,
-  msg: 'Hello world!'
-}
-```
