@@ -1,6 +1,6 @@
 {
   "name": "egg-reply",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Response methods plugin for egg.js",
   "eggPlugin": {
     "name": "reply"

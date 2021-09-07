@@ -53,11 +53,23 @@ Restful API 接口响应结构定义 Egg 中间件，支持符合标准 HTTP 状
 
 ## 开启插件
 
+声明使用插件
+
 ```js
 // config/plugin.js
+
+// CommonJS
 exports.reply = {
   enable: true,
   package: 'egg-reply',
+};
+
+// ES6 Module
+export default {
+  reply: {
+    enable: true,
+    package: 'egg-reply',
+  },
 };
 ```
 
