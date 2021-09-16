@@ -22,16 +22,34 @@
 
 Restful API 接口响应结构定义 Egg 中间件，支持符合标准 HTTP 状态码 Restful API 标准和业界比较通用的 JSON 型 Restful API 标准。
 
+文档目录
+
+- [egg-reply](#egg-reply)
+  - [依赖说明](#依赖说明)
+    - [依赖的 egg 版本](#依赖的-egg-版本)
+    - [依赖的插件](#依赖的插件)
+  - [开启插件](#开启插件)
+  - [使用场景](#使用场景)
+  - [API](#api)
+    - [ctx.success](#ctxsuccess)
+    - [ctx.fail](#ctxfail)
+    - [ctx.exception](#ctxexception)
+    - [ctx.ok](#ctxok)
+    - [ctx.created](#ctxcreated)
+    - [ctx.noContent](#ctxnocontent)
+    - [ctx.badRequest](#ctxbadrequest)
+    - [ctx.unauthorized](#ctxunauthorized)
+    - [ctx.forbidden](#ctxforbidden)
+    - [ctx.notFound](#ctxnotfound)
+    - [ctx.conflict](#ctxconflict)
+    - [ctx.serverError](#ctxservererror)
+    - [ctx.reply](#ctxreply)
+    - [ctx.catch](#ctxcatch)
+  - [详细配置](#详细配置)
+  - [提问交流](#提问交流)
+  - [License](#license)
+
 ## 依赖说明
-
-1. 接口响应的 HTTP 状态码固定为 200
-
-| 字段    | 说明         |     |
-| :------ | :----------- | :-- |
-| code    |              |     |
-| success |              |     |
-| data    |              |     |
-| msg     | 请求状态描述 |     |
 
 ### 依赖的 egg 版本
 
@@ -42,14 +60,7 @@ Restful API 接口响应结构定义 Egg 中间件，支持符合标准 HTTP 状
 
 ### 依赖的插件
 
-<!--
-
-如果有依赖其它插件，请在这里特别说明。如
-
-- security
-- multipart
-
--->
+无
 
 ## 开启插件
 
@@ -75,7 +86,7 @@ export default {
 
 ## 使用场景
 
-方便定义前后端通信的数据结构，定义标准化的接口返回结构。
+方便定义前后端通信的数据结构，定义标准化的接口返回结构。能够在 Controller 或 Service 中 `this.ctx.<method>` 快捷定义返回信息结构。
 
 ```ts
 import { Controller } from 'egg';
