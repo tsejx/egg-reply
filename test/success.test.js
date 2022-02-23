@@ -22,7 +22,7 @@ describe('test/success.test.js', () => {
         code: 200,
         success: true,
         data: null,
-        msg: '成功'
+        msg: '成功',
       })
       .expect(200);
   });
@@ -36,9 +36,9 @@ describe('test/success.test.js', () => {
         data: [
           { id: 1, name: 'Ben' },
           { id: 2, name: 'Tom' },
-          { id: 3, name: 'Jack' }
+          { id: 3, name: 'Jack' },
         ],
-        msg: '成功'
+        msg: '成功',
       })
       .expect(200);
   });
@@ -52,9 +52,9 @@ describe('test/success.test.js', () => {
         data: {
           id: 1,
           name: 'Ben',
-          age: 12
+          age: 12,
         },
-        msg: '成功'
+        msg: '成功',
       })
       .expect(200);
   });
@@ -66,7 +66,7 @@ describe('test/success.test.js', () => {
         code: 200,
         success: true,
         data: 100,
-        msg: '成功'
+        msg: '成功',
       })
       .expect(200);
   });
@@ -78,91 +78,91 @@ describe('test/success.test.js', () => {
         code: 200,
         success: true,
         data: null,
-        msg: '成功'
+        msg: '成功',
       })
       .expect(200);
   });
 
   it('should GET /success/twoParams', () => {
     return app.httpRequest()
-    .get('/success/twoParams')
-    .expect({
-      code: 200,
-      success: true,
-      data: [
-        { id: 1, name: 'Ben' },
-        { id: 2, name: 'Tom' },
-        { id: 3, name: 'Jack' }
-      ],
-      msg: '操作成功'
-    })
-    .expect(200);
-  })
+      .get('/success/twoParams')
+      .expect({
+        code: 200,
+        success: true,
+        data: [
+          { id: 1, name: 'Ben' },
+          { id: 2, name: 'Tom' },
+          { id: 3, name: 'Jack' },
+        ],
+        msg: '操作成功',
+      })
+      .expect(200);
+  });
 
   it('should GET /success/twoParamsNull', () => {
     return app.httpRequest()
-    .get('/success/twoParamsNull')
-    .expect({
-      code: 200,
-      success: true,
-      data: [
-        { id: 1, name: 'Ben' },
-        { id: 2, name: 'Tom' },
-        { id: 3, name: 'Jack' }
-      ],
-      msg: '成功'
-    })
-    .expect(200);
-  })
+      .get('/success/twoParamsNull')
+      .expect({
+        code: 200,
+        success: true,
+        data: [
+          { id: 1, name: 'Ben' },
+          { id: 2, name: 'Tom' },
+          { id: 3, name: 'Jack' },
+        ],
+        msg: '成功',
+      })
+      .expect(200);
+  });
 
   it('should GET /success/twoParamsEmptyString', () => {
     return app.httpRequest()
-    .get('/success/twoParamsEmptyString')
-    .expect({
-      code: 200,
-      success: true,
-      data: [
-        { id: 1, name: 'Ben' },
-        { id: 2, name: 'Tom' },
-        { id: 3, name: 'Jack' }
-      ],
-      msg: '成功'
-    })
-    .expect(200);
-  })
+      .get('/success/twoParamsEmptyString')
+      .expect({
+        code: 200,
+        success: true,
+        data: [
+          { id: 1, name: 'Ben' },
+          { id: 2, name: 'Tom' },
+          { id: 3, name: 'Jack' },
+        ],
+        msg: '成功',
+      })
+      .expect(200);
+  });
 
   it('should GET /success/threeParams', () => {
     return app.httpRequest()
-    .get('/success/threeParams')
-    .expect({
-      code: 200,
-      success: true,
-      data: [
-        { id: 1, name: 'Ben' },
-        { id: 2, name: 'Tom' },
-        { id: 3, name: 'Jack' }
-      ],
-      msg: '成功',
-      extra: {
-        token: '123'
-      }
-    })
-    .expect(200);
-  })
+      .get('/success/threeParams')
+      .expect({
+        code: 200,
+        success: true,
+        data: [
+          { id: 1, name: 'Ben' },
+          { id: 2, name: 'Tom' },
+          { id: 3, name: 'Jack' },
+        ],
+        msg: '成功',
+        extra: {
+          token: '123',
+        },
+      })
+      .expect(200);
+  });
 
   it('should GET /success/threeParamsNull', () => {
     return app.httpRequest()
-    .get('/success/threeParamsNull')
-    .expect({
-      code: 200,
-      success: true,
-      data: [
-        { id: 1, name: 'Ben' },
-        { id: 2, name: 'Tom' },
-        { id: 3, name: 'Jack' }
-      ],
-      msg: '操作成功'
-    })
-    .expect(200);
-  })
+      .get('/success/threeParamsNull')
+      .expect({
+        code: 200,
+        success: true,
+        data: [
+          { id: 1, name: 'Ben' },
+          { id: 2, name: 'Tom' },
+          { id: 3, name: 'Jack' },
+        ],
+        msg: '操作成功',
+      })
+      .expect(200);
+  });
 });

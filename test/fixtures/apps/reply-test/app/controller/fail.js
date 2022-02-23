@@ -3,16 +3,16 @@
 const Controller = require('egg').Controller;
 
 class FailController extends Controller {
-  async noneParam () {
-    this.ctx.fail()
+  async noneParam() {
+    this.ctx.fail();
   }
 
   async oneParamNumber() {
     this.ctx.fail(1001);
   }
 
-  async onParamZero () {
-    this.ctx.fail(0)
+  async onParamZero() {
+    this.ctx.fail(0);
   }
 
   async oneParamString() {

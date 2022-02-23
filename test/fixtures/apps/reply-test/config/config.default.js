@@ -2,4 +2,4 @@
 
 exports.keys = '123456';
 
-exports.middleware = ['reply']
+exports.middleware = [ 'reply' ];

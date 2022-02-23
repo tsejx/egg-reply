@@ -36,7 +36,7 @@ describe('test/restful2xx.test.js', () => {
         data: [
           { id: 1, name: 'Ben' },
           { id: 2, name: 'Tom' },
-          { id: 3, name: 'Jack' }
+          { id: 3, name: 'Jack' },
         ],
         msg: '成功',
       })
@@ -52,7 +52,7 @@ describe('test/restful2xx.test.js', () => {
         data: {
           id: 1,
           name: 'Tome',
-          age: 20
+          age: 20,
         },
         msg: '成功',
       })
@@ -80,7 +80,7 @@ describe('test/restful2xx.test.js', () => {
         data: [
           { id: 1, name: 'Ben' },
           { id: 2, name: 'Tom' },
-          { id: 3, name: 'Jack' }
+          { id: 3, name: 'Jack' },
         ],
         msg: '成功',
       })
@@ -108,7 +108,7 @@ describe('test/restful2xx.test.js', () => {
         data: [
           { id: 1, name: 'Ben' },
           { id: 2, name: 'Tom' },
-          { id: 3, name: 'Jack' }
+          { id: 3, name: 'Jack' },
         ],
         msg: '成功',
       })
@@ -136,12 +136,12 @@ describe('test/restful2xx.test.js', () => {
         data: [
           { id: 1, name: 'Ben' },
           { id: 2, name: 'Tom' },
-          { id: 3, name: 'Jack' }
+          { id: 3, name: 'Jack' },
         ],
         msg: '成功',
         extra: {
-          token: '123'
-        }
+          token: '123',
+        },
       })
       .expect(201);
   });

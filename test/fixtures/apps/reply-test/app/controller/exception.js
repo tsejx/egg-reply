@@ -3,16 +3,16 @@
 const Controller = require('egg').Controller;
 
 class ExceptionController extends Controller {
-  async noneParam () {
-    this.ctx.exception()
+  async noneParam() {
+    this.ctx.exception();
   }
 
   async oneParamNumber() {
     this.ctx.exception(1001);
   }
 
-  async onParamZero () {
-    this.ctx.exception(0)
+  async onParamZero() {
+    this.ctx.exception(0);
   }
 
   async oneParamString() {

@@ -37,7 +37,7 @@ describe('test/catch.test.js', () => {
         success: false,
         data: {
           errorMessage: 'Hello world!',
-          errorName: 'Error'
+          errorName: 'Error',
         },
         msg: '失败',
       })
@@ -53,7 +53,7 @@ describe('test/catch.test.js', () => {
         success: false,
         data: {
           errorMessage: 'Hello world!',
-          errorName: 'Error'
+          errorName: 'Error',
         },
         msg: '失败',
       })
@@ -68,7 +68,7 @@ describe('test/catch.test.js', () => {
         code: 1002,
         success: false,
         data: {
-          error: null
+          error: null,
         },
         msg: '失败',
       })
@@ -83,7 +83,7 @@ describe('test/catch.test.js', () => {
         code: 1003,
         success: false,
         data: {
-          error: 'Fail'
+          error: 'Fail',
         },
         msg: '失败',
       })

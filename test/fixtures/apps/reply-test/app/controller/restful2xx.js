@@ -3,66 +3,66 @@
 const Controller = require('egg').Controller;
 
 class Restful2xxController extends Controller {
-  async okNoneParam () {
-    this.ctx.ok()
+  async okNoneParam() {
+    this.ctx.ok();
   }
 
-  async okOneParamArray () {
+  async okOneParamArray() {
     this.ctx.ok([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ])
+      { id: 3, name: 'Jack' },
+    ]);
   }
 
-  async okOneParamObject () {
+  async okOneParamObject() {
     this.ctx.ok({
       id: 1,
       name: 'Tome',
-      age: 20
-    })
+      age: 20,
+    });
   }
 
-  async okOneParamNull () {
-    this.ctx.ok(null)
+  async okOneParamNull() {
+    this.ctx.ok(null);
   }
 
-  async okTwoParamNull () {
+  async okTwoParamNull() {
     this.ctx.ok([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ], null)
+      { id: 3, name: 'Jack' },
+    ], null);
   }
 
-  async createdNoneParam () {
-    this.ctx.created()
+  async createdNoneParam() {
+    this.ctx.created();
   }
 
-  async createdOneParamArray () {
+  async createdOneParamArray() {
     this.ctx.created([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ])
+      { id: 3, name: 'Jack' },
+    ]);
   }
 
-  async createdOneParamObject () {
-    this.ctx.created({ id: 1, name: 'Ben' })
+  async createdOneParamObject() {
+    this.ctx.created({ id: 1, name: 'Ben' });
   }
 
-  async createdTwoParams () {
+  async createdTwoParams() {
     this.ctx.created([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
+      { id: 3, name: 'Jack' },
     ], {
-      token: '123'
-    })
+      token: '123',
+    });
   }
 
-  async noContent () {
-    this.ctx.noContent()
+  async noContent() {
+    this.ctx.noContent();
   }
 }
 

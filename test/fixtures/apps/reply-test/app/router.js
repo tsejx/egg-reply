@@ -20,7 +20,7 @@ module.exports = app => {
   router.get('/fail/noneParam', controller.fail.noneParam);
 
   router.get('/fail/oneParamNumber', controller.fail.oneParamNumber);
-  router.get('/fail/onParamZero', controller.fail.onParamZero)
+  router.get('/fail/onParamZero', controller.fail.onParamZero);
   router.get('/fail/oneParamString', controller.fail.oneParamString);
   router.get('/fail/oneParamsNotNumberString', controller.fail.oneParamsNotNumberString);
   router.get('/fail/oneParamNull', controller.fail.oneParamNull);
@@ -33,7 +33,7 @@ module.exports = app => {
   router.get('/exception/noneParam', controller.exception.noneParam);
 
   router.get('/exception/oneParamNumber', controller.exception.oneParamNumber);
-  router.get('/exception/onParamZero', controller.exception.onParamZero)
+  router.get('/exception/onParamZero', controller.exception.onParamZero);
   router.get('/exception/oneParamString', controller.exception.oneParamString);
   router.get('/exception/oneParamsNotNumberString', controller.exception.oneParamsNotNumberString);
   router.get('/exception/oneParamNull', controller.exception.oneParamNull);

@@ -3,39 +3,39 @@
 const Controller = require('egg').Controller;
 
 class CatchController extends Controller {
-  async noneParam () {
-    this.ctx.catch()
+  async noneParam() {
+    this.ctx.catch();
   }
 
-  async throwErrorNull () {
+  async throwErrorNull() {
     try {
-      throw new Error('Hello world!')
+      throw new Error('Hello world!');
     } catch (e) {
-      this.ctx.catch(null, e)
+      this.ctx.catch(null, e);
     }
   }
 
-  async throwErrorCode () {
+  async throwErrorCode() {
     try {
-      throw new Error('Hello world!')
+      throw new Error('Hello world!');
     } catch (e) {
-      this.ctx.catch(1001, e)
+      this.ctx.catch(1001, e);
     }
   }
 
-  async throwNull () {
+  async throwNull() {
     try {
-      throw new Error('Hello world!')
+      throw new Error('Hello world!');
     } catch (e) {
-      this.ctx.catch(1002, null)
+      this.ctx.catch(1002, null);
     }
   }
 
-  async throwString () {
+  async throwString() {
     try {
-      throw new Error('Hello world!')
+      throw new Error('Hello world!');
     } catch (e) {
-      this.ctx.catch(1003, 'Fail')
+      this.ctx.catch(1003, 'Fail');
     }
   }
 }

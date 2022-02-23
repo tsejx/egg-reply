@@ -10,7 +10,9 @@
     "eggPlugin",
     "egg-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "codecov": "^3.8.3"
+  },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
@@ -34,10 +36,10 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
+    "app",
     "config",
-    "app"
+    "app.js",
+    "index.d.ts"
   ],
   "ci": {
     "version": "8, 10"

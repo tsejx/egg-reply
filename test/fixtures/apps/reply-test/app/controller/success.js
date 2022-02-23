@@ -3,74 +3,74 @@
 const Controller = require('egg').Controller;
 
 class SuccessController extends Controller {
-  async noneParam () {
-    this.ctx.success()
+  async noneParam() {
+    this.ctx.success();
   }
 
   async oneParamArray() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ])
+      { id: 3, name: 'Jack' },
+    ]);
   }
 
-  async oneParamObject () {
+  async oneParamObject() {
     this.ctx.success({
       id: 1,
       name: 'Ben',
-      age: 12
-    })
+      age: 12,
+    });
   }
 
-  async oneParamNumber () {
-    this.ctx.success(100)
+  async oneParamNumber() {
+    this.ctx.success(100);
   }
 
-  async oneParamNull () {
+  async oneParamNull() {
     this.ctx.success(null);
   }
 
-  async twoParams () {
+  async twoParams() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ], '操作成功')
+      { id: 3, name: 'Jack' },
+    ], '操作成功');
   }
 
-  async twoParamsNull () {
+  async twoParamsNull() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ], null)
+      { id: 3, name: 'Jack' },
+    ], null);
   }
 
-  async twoParamsEmptyString () {
+  async twoParamsEmptyString() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ], '')
+      { id: 3, name: 'Jack' },
+    ], '');
   }
 
-  async threeParams () {
+  async threeParams() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
+      { id: 3, name: 'Jack' },
     ], null, {
-      token: '123'
-    })
+      token: '123',
+    });
   }
 
-  async threeParamsNull () {
+  async threeParamsNull() {
     this.ctx.success([
       { id: 1, name: 'Ben' },
       { id: 2, name: 'Tom' },
-      { id: 3, name: 'Jack' }
-    ], '操作成功', null)
+      { id: 3, name: 'Jack' },
+    ], '操作成功', null);
   }
 }
 
